@@ -31,8 +31,8 @@ export const data =[
     id:4,
     name:"Burger",
     image:burger,
-    github:"",
-    live:"",
+    github:"https://github.com/panza123/food",
+    live:"https://food-panza123.vercel.app",
 },
 {
     id:5,

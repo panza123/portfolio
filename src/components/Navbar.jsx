@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo1.png";
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   function handleClick() {
@@ -22,59 +22,38 @@ export default function Navbar() {
         </div>
         {/* {menu} */}
         <ul className="hidden md:flex">
-          <li>     <Link 
-      activeClass="active" 
-      to="home" 
-    
-      smooth={true} 
-      duration={500} 
-  
-    >
-      Home
-    </Link></li>
-          <li> <Link 
-      activeClass="active" 
-      to="about" 
-    
-      smooth={true} 
-      duration={500} 
-  
-    >
-      About
-    </Link> </li>
           <li>
-           <Link 
-      activeClass="active" 
-      to="skill" 
-    
-      smooth={true} 
-      duration={500} 
-  
-    >
-      Skill
-    </Link>
+            {" "}
+            <Link activeClass="active" to="home" smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
-          <li> <Link 
-      activeClass="active" 
-      to="work" 
-    
-      smooth={true} 
-      duration={500} 
-  
-    >
-      Work
-    </Link></li>
           <li>
-           <Link 
-      activeClass="active" 
-      to="contact" 
-    
-      smooth={true} 
-      duration={500} 
-  
-    >
-      Contact
-    </Link>
+            {" "}
+            <Link activeClass="active" to="about" smooth={true} duration={500}>
+              About
+            </Link>{" "}
+          </li>
+          <li>
+            <Link activeClass="active" to="skill" smooth={true} duration={500}>
+              Skill
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link activeClass="active" to="work" smooth={true} duration={500}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         {/* {menu hamburger} */}
@@ -92,93 +71,86 @@ export default function Navbar() {
           <button
             className="w-[150px] h-[50px] bg-slate-600
         text-2xl rounded-md  shadow-lg shadow-white hover:bg-gray-400 "
-         
           >
             <li>
               {" "}
-              <Link 
-      activeClass="active" 
-      to="home" 
-    
-      smooth={true} 
-      duration={500} 
-      onClick={closeNav}
-    >
-      Home
-    </Link>
+              <Link
+                activeClass="active"
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={closeNav}
+              >
+                Home
+              </Link>
             </li>
           </button>
           <button
             className="w-[150px] h-[50px] bg-slate-600
         text-2xl rounded-md  shadow-lg shadow-white  hover:bg-gray-400 "
-       
           >
-            <li>  <Link 
-      activeClass="active" 
-      to="about" 
-    
-      smooth={true} 
-      duration={500} 
-      onClick={closeNav}
-    >
-      About
-    </Link></li>
+            <li>
+              {" "}
+              <Link
+                activeClass="active"
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={closeNav}
+              >
+                About
+              </Link>
+            </li>
           </button>
 
           <button
             className="w-[150px] h-[50px] bg-slate-600
         text-2xl rounded-md  shadow-lg shadow-white hover:bg-gray-400  "
-          
           >
             <li>
-            <Link 
-      activeClass="active" 
-      to="skill" 
-    
-      smooth={true} 
-      duration={500} 
-      onClick={closeNav}
-    >
-      Skill
-    </Link>
+              <Link
+                activeClass="active"
+                to="skill"
+                smooth={true}
+                duration={500}
+                onClick={closeNav}
+              >
+                Skill
+              </Link>
             </li>
           </button>
 
           <button
             className="w-[150px] h-[50px] bg-slate-600
         text-2xl rounded-md  shadow-lg shadow-white   hover:bg-gray-400 "
-          
           >
             <li>
-            <Link 
-      activeClass="active" 
-      to="work" 
-    
-      smooth={true} 
-      duration={500} 
-      onClick={closeNav}
-    >
-      work
-    </Link>
+              <Link
+                activeClass="active"
+                to="work"
+                smooth={true}
+                duration={500}
+                onClick={closeNav}
+              >
+                work
+              </Link>
             </li>
           </button>
 
           <button
             className="w-[150px] h-[50px] bg-slate-600
         text-2xl rounded-md  shadow-lg shadow-white   hover:bg-gray-400 "
-            
           >
             <li>
-            <Link 
-      activeClass="active" 
-      to="contact" 
-    
-      smooth={true} 
-      duration={500} 
-      onClick={closeNav}
-    >
-      Contact
-    </Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={closeNav}
+              >
+                Contact
+              </Link>
             </li>
           </button>
         </ul>
@@ -188,7 +160,8 @@ export default function Navbar() {
           <ul>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] mb-2 hover:ml-[10px] duration-300 bg-blue-600">
               <a
-                href="https://www.linkedin.com/feed/" target="_blank"
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
                 className="flex justify-between items-center w-full text-white"
               >
                 Linkedin
@@ -198,7 +171,8 @@ export default function Navbar() {
 
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] mb-2 hover:ml-[10px] duration-300 bg-gray-600">
               <a
-                href="https://github.com/" target="_blank"
+                href="https://github.com/"
+                target="_blank"
                 className="flex justify-between items-center w-full text-white"
               >
                 Github
@@ -208,7 +182,8 @@ export default function Navbar() {
 
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] mb-2 hover:ml-[10px] duration-300 bg-red-600">
               <a
-                href="mailto:olowonlafaruq@gmail.com" target="_blank"
+                href="mailto:olowonlafaruq@gmail.com"
+                target="_blank"
                 className="flex justify-between items-center w-full text-white"
               >
                 Email
